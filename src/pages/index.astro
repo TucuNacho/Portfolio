@@ -2,11 +2,506 @@
 import Layout from "../layouts/Layout.astro";
 ---
 
-<Layout title="Joaquin Ignacio Barrojo Desarrollador Web">
-  <section id="inicio" class="min-h-screen flex items-center justify-center">
-    <div class="text-center mx-auto">
-      <p class="text-blue-600 font-semibold text-lg mb-4 animate-fade-in">¡Hola, soy,</p>
-      <h1 class="text-4xl font-bold">Joaquin Ignacio Barrojo</h1>
+<Layout title="Joaquín Ignacio Barrojo - Desarrollador Web Full Stack">
+  <!-- Hero Section -->
+  <section
+    id="inicio"
+    class="min-h-screen flex items-center justify-center px-4"
+  >
+    <div class="text-center container mx-auto">
+      <!-- Saludo -->
+      <p class="text-cyan-400 font-semibold text-lg mb-4">Hola, soy</p>
+
+      <!-- Nombre -->
+      <h1 class="text-white text-6xl md:text-7xl font-bold mb-6">
+        Joaquín Ignacio Barrojo
+      </h1>
+
+      <!-- Título -->
+      <h2 class="text-3xl md:text-4xl font-semibold text-gray-100 mb-8">
+        Desarrollador Web <span class="text-cyan-400">Full Stack</span>
+      </h2>
+
+      <!-- Descripción -->
+      <p class="text-xl text-gray-300 max-w-2xl mx-auto mb-12 leading-relaxed">
+        Construyendo experiencias web modernas con <span
+          class="font-semibold text-cyan-400">React</span
+        > y
+        <span class="font-semibold text-green-400">Node.js</span>
+      </p>
+
+      <!-- Botones -->
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a
+          href="#proyectos"
+          class="bg-cyan-500 text-white px-8 py-4 rounded-lg hover:bg-cyan-600 transition transform hover:scale-105 font-semibold"
+        >
+          Ver Proyectos
+        </a>
+        <a
+          href="#contacto"
+          class="border-2 border-cyan-400 text-cyan-400 px-8 py-4 rounded-lg hover:bg-cyan-400/10 transition font-semibold"
+        >
+          Contactar
+        </a>
+      </div>
+
+      <!-- Enlaces sociales -->
+      <div class="flex flex-wrap justify-center gap-6 mt-12 text-gray-400">
+        <a
+          href="https://github.com/TucuNacho"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="hover:text-cyan-400 transition flex items-center gap-2 text-lg"
+        >
+          <svg
+            class="w-6 h-6"
+            fill="currentColor"
+            viewBox="0 0 24 24"
+            aria-hidden="true"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"
+              clip-rule="evenodd"></path>
+          </svg>
+          GitHub
+        </a>
+        <a
+          href="https://linkedin.com/in/joaquín-barrojo-689540279"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="hover:text-cyan-400 transition flex items-center gap-2 text-lg"
+        >
+          <svg
+            class="w-6 h-6"
+            fill="currentColor"
+            viewBox="0 0 24 24"
+            aria-hidden="true"
+          >
+            <path
+              d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"
+            ></path>
+          </svg>
+          LinkedIn
+        </a>
+        <a
+          href="mailto:barrojojoaquin2@gmail.com"
+          class="hover:text-cyan-400 transition flex items-center gap-2 text-lg"
+        >
+          <svg
+            class="w-6 h-6"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+            ></path>
+          </svg>
+          Email
+        </a>
+      </div>
     </div>
   </section>
+
+  <!-- Sección Sobre Mí -->
+  <section id="sobre-mi" class="py-20 px-4">
+    <div class="container mx-auto max-w-4xl">
+      <h2 class="text-4xl md:text-5xl font-bold text-white text-center mb-12">
+        Sobre Mí
+      </h2>
+      <div
+        class="bg-blue-900/30 backdrop-blur-sm rounded-2xl p-8 border border-blue-800/50"
+      >
+        <p class="text-gray-300 text-lg leading-relaxed mb-6">
+          Desarrollador Full Stack con <span class="text-cyan-400 font-semibold"
+            >10 meses de experiencia</span
+          > en el desarrollo de aplicaciones web modernas. Especializado en tecnologías
+          JavaScript tanto en frontend como backend, con experiencia práctica desarrollando
+          aplicaciones CRUD completas.
+        </p>
+        <p class="text-gray-300 text-lg leading-relaxed">
+          Capacidad demostrada para trabajar de forma independiente en proyectos
+          freelance y entregar soluciones funcionales
+          <span class="text-green-400 font-semibold"
+            >deployadas en producción</span
+          >. Comprometido con la creación de soluciones web funcionales y
+          eficientes, con pasión por el aprendizaje continuo.
+        </p>
+      </div>
+    </div>
+  </section>
+  <!-- Seccion Habilidades -->
+
+  <section id="habilidades" class="py-20 px-4 bg-blue-900/20">
+    <div class="container mx-auto max-w-6xl">
+      <h2 class="text-4xl md:text-5xl font-bold text-white text-center mb-16">
+        Habilidades técnicas
+      </h2>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div
+          class="bg-blue-900/30 backdrop-blur-sm rounded-2xl p-8 border border-blue-800/50 hover:border-cyan-500/50 transition"
+        >
+          <div class="flex items-center gap-3 mb-6">
+            <div class="bg-cyan-500/20 p-3 rounded-lg">
+              <svg
+                class="w-8 h-8 text-cyan-400"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+                ></path>
+              </svg>
+            </div>
+            <h3 class="text-2xl font-bold text-white">Frontend</h3>
+          </div>
+          <ul class="space-y-3">
+            <li class="flex items-center gap-2 text-gray-300">
+              <span class="text-cyan-400">▸</span>HTML5 & CSS3
+            </li>
+            <li class="flex items-center gap-2 text-gray-300">
+              <span class="text-cyan-400">▸</span>JavaScript (ES6+)
+            </li>
+            <li class="flex items-center gap-2 text-gray-300">
+              <span class="text-cyan-400">▸</span>React.js
+            </li>
+            <li class="flex items-center gap-2 text-gray-300">
+              <span class="text-cyan-400">▸</span>Bootstrap
+            </li>
+            <li class="flex items-center gap-2 text-gray-300">
+              <span class="text-cyan-400">▸</span>Responsive Design
+            </li>
+          </ul>
+        </div>
+        <div
+          class="bg-blue-900/30 backdrop-blur-sm rounded-2xl p-8 border border-blue-800/50 hover:border-green-500/50 transition"
+        >
+          <div class="flex items-center gap-3 mb-6">
+            <div class="bg-green-500/20 p-3 rounded-lg">
+              <svg
+                class="w-8 h-8 text-green-400"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M5 12h14M5 12a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v4a2 2 0 01-2 2M5 12a2 2 0 00-2 2v4a2 2 0 002 2h14a2 2 0 002-2v-4a2 2 0 00-2-2m-2-4h.01M17 16h.01"
+                ></path>
+              </svg>
+            </div>
+            <h3 class="text-2xl font-bold text-white">Backend</h3>
+          </div>
+          <ul class="space-y-3">
+            <li class="flex items-center gap-2 text-gray-300">
+              <span class="text-green-400">▸</span> Node.js
+            </li>
+            <li class="flex items-center gap-2 text-gray-300">
+              <span class="text-green-400">▸</span>Express.js
+            </li>
+            <li class="flex items-center gap-2 text-gray-300">
+              <span class="text-green-400">▸</span>MongoDB
+            </li>
+            <li class="flex items-center gap-2 text-gray-300">
+              <span class="text-green-400">▸</span>REST APIs
+            </li>
+            <li class="flex items-center gap-2 text-gray-300">
+              <span class="text-green-400">▸</span> CRUD Operations
+            </li>
+          </ul>
+        </div>
+        <div
+          class="bg-blue-900/30 backdrop-blur-sm rounded-2xl p-8 border border-blue-800/50 hover:border-purple-500/50 transition"
+        >
+          <div class="flex items-center gap-3 mb-6">
+            <div class="bg-purple-500/20 p-3 rounded-lg">
+              <svg
+                class="w-8 h-8 text-purple-400"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"
+                ></path>
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
+              </svg>
+            </div>
+            <h3 class="text-2xl font-bold text-white">Herramientas</h3>
+          </div>
+          <ul class="space-y-3">
+            <li class="flex items-center gap-2 text-gray-300">
+              <span class="text-purple-400">▸</span> Git & GitHub
+            </li>
+            <li class="flex items-center gap-2 text-gray-300">
+              <span class="text-purple-400">▸</span> Visual Studio Code
+            </li>
+            <li class="flex items-center gap-2 text-gray-300">
+              <span class="text-purple-400">▸</span> Netlify
+            </li>
+            <li class="flex items-center gap-2 text-gray-300">
+              <span class="text-purple-400">▸</span> Postman
+            </li>
+            <li class="flex items-center gap-2 text-gray-300">
+              <span class="text-purple-400">▸</span> NPM
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- Sección Proyectos -->
+      <section id="proyectos" class="py-20 px-4">
+        <div class="container mx-auto max-w-7xl">
+          <h2
+            class="text-4xl md:text-5xl font-bold text-white text-center mb-4"
+          >
+            Proyectos Destacados
+          </h2>
+          <p class="text-gray-400 text-center mb-16 text-lg">
+            Aplicaciones web completas desarrolladas con el stack MERN
+          </p>
+
+          <div class="grid md:grid-cols-2 gap-8">
+            <!-- Proyecto 1: Sistema de Recetas -->
+            <div
+              class="bg-blue-900/30 backdrop-blur-sm rounded-2xl overflow-hidden border border-blue-800/50 hover:border-cyan-500/50 transition group"
+            >
+              <div class="p-8">
+                <div class="flex items-start justify-between mb-4">
+                  <h3
+                    class="text-2xl font-bold text-white group-hover:text-cyan-400 transition"
+                  >
+                    Sistema de Gestión de Recetas
+                  </h3>
+                  <span
+                    class="bg-cyan-500/20 text-cyan-400 text-xs font-semibold px-3 py-1 rounded-full"
+                  >
+                    MERN Stack
+                  </span>
+                </div>
+
+                <p class="text-gray-300 mb-6 leading-relaxed">
+                  Aplicación web completa tipo CRUD para gestión de recetas
+                  gastronómicas. Sistema intuitivo con funcionalidades avanzadas
+                  de filtrado por categorías e interfaz responsive.
+                </p>
+
+                <div class="mb-6">
+                  <h4 class="text-sm font-semibold text-gray-400 mb-3">
+                    Tecnologías:
+                  </h4>
+                  <div class="flex flex-wrap gap-2">
+                    <span
+                      class="bg-blue-500/20 text-blue-300 text-sm px-3 py-1 rounded-lg"
+                      >React</span
+                    >
+                    <span
+                      class="bg-green-500/20 text-green-300 text-sm px-3 py-1 rounded-lg"
+                      >Node.js</span
+                    >
+                    <span
+                      class="bg-yellow-500/20 text-yellow-300 text-sm px-3 py-1 rounded-lg"
+                      >Express</span
+                    >
+                    <span
+                      class="bg-green-600/20 text-green-400 text-sm px-3 py-1 rounded-lg"
+                      >MongoDB</span
+                    >
+                    <span
+                      class="bg-purple-500/20 text-purple-300 text-sm px-3 py-1 rounded-lg"
+                      >Bootstrap</span
+                    >
+                  </div>
+                </div>
+
+                <div class="flex gap-4">
+                  <a
+                    href="https://recetasrolling-c11.netlify.app/"
+                    target="_blank"
+                    class="flex items-center gap-2 text-cyan-400 hover:text-cyan-300 transition font-semibold"
+                  >
+                    <svg
+                      class="w-5 h-5"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+                      ></path>
+                    </svg>
+                    Ver Demo
+                  </a>
+                  <a
+                    href="https://github.com/TucuNacho"
+                    target="_blank"
+                    class="flex items-center gap-2 text-gray-400 hover:text-white transition font-semibold"
+                  >
+                    <svg
+                      class="w-5 h-5"
+                      fill="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"
+                        clip-rule="evenodd"></path>
+                    </svg>
+                    GitHub
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Proyecto 2: Tienda de ropa -->
+            <!-- Proyecto: Lannister - Tienda de Ropa -->
+            <div
+              class="bg-blue-900/30 backdrop-blur-sm rounded-2xl overflow-hidden border border-blue-800/50 hover:border-cyan-500/50 transition group"
+            >
+              <div class="p-8">
+                <div class="flex items-start justify-between mb-4">
+                  <h3
+                    class="text-2xl font-bold text-white group-hover:text-cyan-400 transition"
+                  >
+                    Lannister - Tienda de Ropa
+                  </h3>
+                  <span
+                    class="bg-cyan-500/20 text-cyan-400 text-xs font-semibold px-3 py-1 rounded-full"
+                  >
+                    MERN Stack
+                  </span>
+                </div>
+
+                <p class="text-gray-300 mb-6 leading-relaxed">
+                  E-commerce completo con sistema de autenticación JWT y panel
+                  de administración. Incluye gestión de productos con control de
+                  stock, filtros por categoría, búsqueda en tiempo real y manejo
+                  de imágenes con Cloudinary.
+                </p>
+
+                <div class="mb-6">
+                  <h4 class="text-sm font-semibold text-gray-400 mb-3">
+                    Tecnologías:
+                  </h4>
+                  <div class="flex flex-wrap gap-2">
+                    <span
+                      class="bg-blue-500/20 text-blue-300 text-sm px-3 py-1 rounded-lg"
+                      >React</span
+                    >
+                    <span
+                      class="bg-green-500/20 text-green-300 text-sm px-3 py-1 rounded-lg"
+                      >Node.js</span
+                    >
+                    <span
+                      class="bg-yellow-500/20 text-yellow-300 text-sm px-3 py-1 rounded-lg"
+                      >Express</span
+                    >
+                    <span
+                      class="bg-green-600/20 text-green-400 text-sm px-3 py-1 rounded-lg"
+                      >MongoDB</span
+                    >
+                    <span
+                      class="bg-purple-500/20 text-purple-300 text-sm px-3 py-1 rounded-lg"
+                      >Bootstrap</span
+                    >
+                    <span
+                      class="bg-orange-500/20 text-orange-300 text-sm px-3 py-1 rounded-lg"
+                      >JWT</span
+                    >
+                  </div>
+                </div>
+
+                <div class="flex gap-4">
+                  <a
+                    href="https://proyecto-modulo3.vercel.app/"
+                    target="_blank"
+                    class="flex items-center gap-2 text-cyan-400 hover:text-cyan-300 transition font-semibold"
+                  >
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    Ver Demo
+                  </a>
+                  <a
+                    href="https://github.com/hernanortiz1/front-modulo3"
+                    target="_blank"
+                    class="flex items-center gap-2 text-gray-400 hover:text-white transition font-semibold"
+                  >
+                    <i class="fa-brands fa-github"></i>
+                    GitHub
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="contacto" class="py-20 px-4">
+        <div class="container mx-auto max-w-4xl text-center">
+          <h2 class="text-4xl md:text-5xl font-bold text-white mb-4">
+            ¿Tenés un proyecto en mente?
+          </h2>
+          <p class="text-gray-400 text-xl mb-12">
+            Estoy disponible para nuevos proyectos y colaboraciones. ¡Hablemos!
+          </p>
+          <div
+            class="flex flex-col sm:flex-row gap-6 justify-center items-center mb-8"
+          >
+            <a
+              href="mailto:barrojojoaquin2@gmail.com"
+              class="group bg-cyan-500/10 hover:bg-cyan-500/20 border-2 border-cyan-500/50 hover:border-cyan-400 rounded-xl px-8 py-4 transition-all duration-300 flex items-center gap-3 min-w-[200px]"
+            >
+              <i class="fa-solid fa-envelope text-2xl text-cyan-400 ps-3"></i>
+              <span
+                class="text-white font-semibold group-hover:text-cyan-300 transition"
+                >Email</span
+              >
+            </a>
+            <a
+              href="https://linkedin.com/in/joaquín-barrojo-689540279"
+              target="_blank"
+              class="group bg-blue-600/10 hover:bg-blue-600/20 border-2 border-blue-500/50 hover:border-blue-400 rounded-xl px-8 py-4 transition-all duration-300 flex items-center gap-3 min-w-[200px]"
+            >
+              <i class="fa-brands fa-linkedin text-2xl text-blue-400"></i>
+              <span
+                class="text-white font-semibold group-hover:text-blue-300 transition"
+                >LinkedIn</span
+              >
+            </a>
+            <!-- GitHub -->
+            <a
+              href="https://github.com/TucuNacho"
+              target="_blank"
+              class="group bg-gray-700/10 hover:bg-gray-700/20 border-2 border-gray-600/50 hover:border-gray-500 rounded-xl px-8 py-4 transition-all duration-300 flex items-center gap-3 min-w-[200px]"
+            >
+              <i class="fa-brands fa-github text-2xl text-gray-400"></i>
+              <span
+                class="text-white font-semibold group-hover:text-gray-300 transition"
+                >GitHub</span
+              >
+            </a>
+          </div>
+        </div>
+      </section>
+    </div>
+  </section>
+  <!-- Más secciones próximamente... -->
 </Layout>

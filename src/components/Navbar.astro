@@ -1,43 +1,140 @@
----
-// Componente de navegación reutilizable
----
-
-<nav class="bg-gray-800 text-white shadow-lg">
+<nav
+  class="fixed top-0 left-0 right-0 z-50 bg-gray-900/80 backdrop-blur-md border-b border-blue-800/30"
+>
   <div class="container mx-auto px-4 py-4">
     <div class="flex justify-between items-center">
-      <!-- Logo/Nombre del sitio -->
-      <a href="/" class="text-2xl font-bold hover:text-blue-200 transition">
-        Portfolio
+      <a
+        href="/"
+        class="text-2xl font-bold text-white hover:text-cyan-400 transition"
+      >
+        <span class="text-cyan-400">{"<"}</span>
+        JIB
+        <span class="text-cyan-400">{"/>"}</span>
       </a>
-
-      <!-- Menú de navegación -->
-      <ul class="flex space-x-6">
+      <ul class="hidden md:flex space-x-8">
         <li>
-          <a href="/" class="hover:text-blue-200 transition font-medium">
+          <a
+            href="#inicio"
+            class="text-gray-300 hover:text-cyan-400 transition font-medium relative group"
+          >
+            Inicio
+            <span
+              class="absolute bottom-0 left-0 w-0 h-0.5 bg-cyan-400 group-hover:w-full transition-all duration-300"
+            ></span>
+          </a>
+        </li>
+        <li>
+          <a
+            href="#proyectos"
+            class="text-gray-300 hover:text-cyan-400 transition font-medium relative group"
+          >
+            Proyectos
+            <span
+              class="absolute bottom-0 left-0 w-0 h-0.5 bg-cyan-400 group-hover:w-full transition-all duration-300"
+            ></span>
+          </a>
+        </li>
+        <li>
+          <a
+            href="#sobre-mi"
+            class="text-gray-300 hover:text-cyan-400 transition font-medium relative group"
+          >
+            Sobre mí
+            <span
+              class="absolute bottom-0 left-0 w-0 h-0.5 bg-cyan-400 group-hover:w-full transition-all duration-300"
+            ></span>
+          </a>
+        </li>
+        <li>
+          <a
+            href="#contacto"
+            class="text-gray-300 hover:text-cyan-400 transition font-medium relative group"
+          >
+            Contacto
+            <span
+              class="absolute bottom-0 left-0 w-0 h-0.5 bg-cyan-400 group-hover:w-full transition-all duration-300"
+            ></span>
+          </a>
+        </li>
+        <li>
+          <a
+            href="#habilidades"
+            class="text-gray-300 hover:text-cyan-400 transition font-medium relative group"
+          >
+            Habilidades
+            <span
+              class="absolute bottom-0 left-0 w-0 h-0.5 bg-cyan-400 group-hover:w-full transition-all duration-300"
+            ></span>
+          </a>
+        </li>
+      </ul>
+      <button
+        id="menuBtn"
+        class="md:hidden text-white hover:text-cyan-400 transition"
+      >
+        <i class="fas fa-bars fa-2x"></i>
+      </button>
+    </div>
+    <!-- Menú mobile (oculto por defecto) -->
+    <div id="mobileMenu" class="hidden md:hidden mt-4 pb-4">
+      <ul class="flex flex-col space-y-4">
+        <li>
+          <a
+            href="#inicio"
+            class="block text-gray-300 hover:text-cyan-400 transition font-medium px-4 py-2 rounded-lg hover:bg-blue-900/30"
+          >
             Inicio
           </a>
         </li>
         <li>
-          <a href="About" class="hover:text-blue-200 transition font-medium">
+          <a
+            href="#sobre-mi"
+            class="block text-gray-300 hover:text-cyan-400 transition font-medium px-4 py-2 rounded-lg hover:bg-blue-900/30"
+          >
             Sobre mí
           </a>
         </li>
         <li>
-          <a href="/contact" class="hover:text-blue-200 transition font-medium">
-            Contacto
+          <a
+            href="#habilidades"
+            class="block text-gray-300 hover:text-cyan-400 transition font-medium px-4 py-2 rounded-lg hover:bg-blue-900/30"
+          >
+            Habilidades
           </a>
         </li>
         <li>
-          <a href="/projects" class="hover:text-blue-200 transition font-medium">
+          <a
+            href="#proyectos"
+            class="block text-gray-300 hover:text-cyan-400 transition font-medium px-4 py-2 rounded-lg hover:bg-blue-900/30"
+          >
             Proyectos
           </a>
         </li>
         <li>
-          <a href="/skills" class="hover:text-blue-200 transition font-medium">
-            Mis habilidades
+          <a
+            href="#contacto"
+            class="block text-gray-300 hover:text-cyan-400 transition font-medium px-4 py-2 rounded-lg hover:bg-blue-900/30"
+          >
+            Contacto
           </a>
         </li>
       </ul>
     </div>
   </div>
 </nav>
+<script>
+  const menuBtn = document.getElementById("menuBtn");
+  const mobileMenu = document.getElementById("mobileMenu");
+
+  menuBtn?.addEventListener("click", () => {
+    mobileMenu?.classList.toggle("hidden");
+  });
+
+  // Cerrar menú al hacer click en un link
+  const mobileLinks = mobileMenu?.querySelectorAll("a");
+  mobileLinks?.forEach((link) => {
+    link.addEventListener("click", () => {
+      mobileMenu?.classList.add("hidden");
+    });
+  });
+</script>
